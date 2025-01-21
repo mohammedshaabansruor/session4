@@ -200,17 +200,27 @@
 
             #endregion
             #region Q4
-            int result = 1;
-            Console.WriteLine("please enter the base ");
-            int.TryParse(Console.ReadLine(), out int Base);
-            Console.WriteLine("please enter the foundation");
-            int.TryParse(Console.ReadLine(), out int Found);
-            for (int i = 1; i <= Found; i++)
-            {
-                result *= Base;
+            //int result = 1;
+            //Console.WriteLine("please enter the base ");
+            //int.TryParse(Console.ReadLine(), out int Base);
+            //Console.WriteLine("please enter the foundation");
+            //int.TryParse(Console.ReadLine(), out int Found);
+            //for (int i = 1; i <= Found; i++)
+            //{
+            //    result *= Base;
 
+            //}
+            //Console.WriteLine(result);
+            #endregion
+            #region Q5
+             
+            Console.WriteLine("please enter string");
+            string tex = Console.ReadLine();
+            for (int i = 0; i < tex.Length; i++)
+            {
+                Console.Write(tex[tex.Length - 1 - i]);
             }
-            Console.WriteLine(result);
+
             #endregion
         }
     }
