@@ -188,16 +188,29 @@
             //}
             #endregion
             #region Q3
-            Console.WriteLine("please enter a number");
-            int.TryParse(Console.ReadLine(), out int Number);
-            for (int i = 1; i < Number; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
+            //Console.WriteLine("please enter a number");
+            //int.TryParse(Console.ReadLine(), out int Number);
+            //for (int i = 1; i < Number; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
 
+            #endregion
+            #region Q4
+            int result = 1;
+            Console.WriteLine("please enter the base ");
+            int.TryParse(Console.ReadLine(), out int Base);
+            Console.WriteLine("please enter the foundation");
+            int.TryParse(Console.ReadLine(), out int Found);
+            for (int i = 1; i <= Found; i++)
+            {
+                result *= Base;
+
+            }
+            Console.WriteLine(result);
             #endregion
         }
     }
