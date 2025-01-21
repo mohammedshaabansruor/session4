@@ -255,18 +255,26 @@
             #endregion
             #region Q9
 
-            Console.WriteLine("please enter a string ");
-            string str = Console.ReadLine();
-            int start, end;
-            Console.WriteLine("please enter start");
-            start = int.Parse(Console.ReadLine());
+            //Console.WriteLine("please enter a string ");
+            //string str = Console.ReadLine();
+            //int start, end;
+            //Console.WriteLine("please enter start");
+            //start = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("please enter end");
-            end = int.Parse(Console.ReadLine());
-            for (int i = start; i <= end; i++)
-            {
-                Console.Write(str[i]);
-            }
+            //Console.WriteLine("please enter end");
+            //end = int.Parse(Console.ReadLine());
+            //for (int i = start; i <= end; i++)
+            //{
+            //    Console.Write(str[i]);
+            //}
+            #endregion
+            #region Q10
+            Console.WriteLine("please enter first string");
+            string st1 = Console.ReadLine();
+            Console.WriteLine("please enter  second string ");
+            string st2 = Console.ReadLine();
+            string FullSt = st1 + st2;
+            Console.WriteLine(FullSt);
             #endregion
         }
     }
