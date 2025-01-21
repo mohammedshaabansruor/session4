@@ -38,7 +38,7 @@
             
             foreach (int number in Numbers)
             {
-                number += 10;//invalid
+                number += 10;
                 Console.WriteLine(number);
             }
             #endregion
@@ -52,7 +52,7 @@
             do
             {
                 Console.WriteLine("Please enter an even number");
-                //Number = int.Parse(Console.ReadLine());
+                Number = int.Parse(Console.ReadLine());
                 Flag = int.TryParse(Console.ReadLine(), out Number);
 
             } while (Number % 2 == 1 || !(Flag));
