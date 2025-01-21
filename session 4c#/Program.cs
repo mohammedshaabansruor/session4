@@ -277,18 +277,34 @@
             //Console.WriteLine(FullSt);
             #endregion
             #region Q12
-            Console.WriteLine("Please enter the size of array");
-            int size = int.Parse(Console.ReadLine()), sum = 0;
-            int[] Numbers = new int[size];
+            //Console.WriteLine("Please enter the size of array");
+            //int size = int.Parse(Console.ReadLine()), sum = 0;
+            //int[] Numbers = new int[size];
 
-            for (int i = 0; i < size; i++)
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.WriteLine($"please ener array element no {i}");
+            //    Numbers[i] = int.Parse(Console.ReadLine());
+            //    sum += Numbers[i];
+
+            //}
+            //Console.WriteLine($"Sum of elements of array is {sum}");
+            #endregion 
+            #region Q14
+            int[] Numbers = new int[7] { 1, 2, 3, 2, 5, 4, 5 };
+            int counter = 0;
+            for (int i = 0; i < Numbers.Length; i++)
             {
-                Console.WriteLine($"please ener array element no {i}");
-                Numbers[i] = int.Parse(Console.ReadLine());
-                sum += Numbers[i];
-
+                for (int j = 0; j < Numbers.Length; j++)
+                {
+                    if (Numbers[i] == Numbers[j])
+                    {
+                        counter++;
+                    }
+                }
+                Console.WriteLine($"{Numbers[i]} is repated {counter} times");
+                counter = 0;
             }
-            Console.WriteLine($"Sum of elements of array is {sum}");
             #endregion
         }
     }
