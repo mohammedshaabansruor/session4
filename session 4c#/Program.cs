@@ -289,21 +289,48 @@
 
             //}
             //Console.WriteLine($"Sum of elements of array is {sum}");
-            #endregion 
+            #endregion
             #region Q14
-            int[] Numbers = new int[7] { 1, 2, 3, 2, 5, 4, 5 };
-            int counter = 0;
-            for (int i = 0; i < Numbers.Length; i++)
+            //int[] Numbers = new int[7] { 1, 2, 3, 2, 5, 4, 5 };
+            //int counter = 0;
+            //for (int i = 0; i < Numbers.Length; i++)
+            //{
+            //    for (int j = 0; j < Numbers.Length; j++)
+            //    {
+            //        if (Numbers[i] == Numbers[j])
+            //        {
+            //            counter++;
+            //        }
+            //    }
+            //    Console.WriteLine($"{Numbers[i]} is repated {counter} times");
+            //    counter = 0;
+            //}
+            #endregion
+            #region Q18
+            Console.WriteLine("please enter number of rows");
+            int rows = int.Parse(Console.ReadLine());
+            Console.WriteLine("please enter a number of coulmns");
+            int columns = int.Parse(Console.ReadLine());
+            int[,] Numbers1 = new int[rows, columns];
+            int[,] Numbers2 = new int[rows, columns];
+            for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < Numbers.Length; j++)
+                Console.WriteLine($"enter value of row{i + 1}");
+
+                for (int j = 0; j < columns; j++)
                 {
-                    if (Numbers[i] == Numbers[j])
-                    {
-                        counter++;
-                    }
+                    Console.WriteLine("please enter value of coulmns ");
+                    Numbers1[i, j] = int.Parse(Console.ReadLine());
                 }
-                Console.WriteLine($"{Numbers[i]} is repated {counter} times");
-                counter = 0;
+            }
+            Array.Copy(Numbers1, Numbers2, Numbers2.Length);
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.WriteLine(Numbers2[i, j] + "\t");
+                }
+                Console.WriteLine();
             }
             #endregion
         }
