@@ -223,14 +223,34 @@
 
             #endregion
             #region Q6
-            Console.WriteLine("please enter a start");
-            int Start = int.Parse(Console.ReadLine());
-            Console.WriteLine("please enter a end ");
-            int End = int.Parse(Console.ReadLine());
-            for (int i = Start; i <= End; ++i)
-            {
+            //Console.WriteLine("please enter a start");
+            //int Start = int.Parse(Console.ReadLine());
+            //Console.WriteLine("please enter a end ");
+            //int End = int.Parse(Console.ReadLine());
+            //for (int i = Start; i <= End; ++i)
+            //{
 
-                Console.WriteLine($"{i}");
+            //    Console.WriteLine($"{i}");
+            //}
+            #endregion
+            #region Q8
+            Console.WriteLine("plese enter degree of marks");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (i == j)
+                    {
+                        Console.Write("1");
+                    }
+                    else
+                    {
+                        Console.Write("0");
+                    }
+
+                }
+                Console.WriteLine();
             }
             #endregion
         }
