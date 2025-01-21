@@ -234,23 +234,38 @@
             //}
             #endregion
             #region Q8
-            Console.WriteLine("plese enter degree of marks");
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    if (i == j)
-                    {
-                        Console.Write("1");
-                    }
-                    else
-                    {
-                        Console.Write("0");
-                    }
+            //Console.WriteLine("plese enter degree of marks");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        if (i == j)
+            //        {
+            //            Console.Write("1");
+            //        }
+            //        else
+            //        {
+            //            Console.Write("0");
+            //        }
 
-                }
-                Console.WriteLine();
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+            #region Q9
+
+            Console.WriteLine("please enter a string ");
+            string str = Console.ReadLine();
+            int start, end;
+            Console.WriteLine("please enter start");
+            start = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("please enter end");
+            end = int.Parse(Console.ReadLine());
+            for (int i = start; i <= end; i++)
+            {
+                Console.Write(str[i]);
             }
             #endregion
         }
